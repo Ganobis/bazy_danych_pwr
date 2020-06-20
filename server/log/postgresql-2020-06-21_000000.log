@@ -1,0 +1,14 @@
+2020-06-21 00:11:01.771 CEST [13920] BŁĄD:  kolumna "nr_tranzacji" relacji "tranzakcje" nie istnieje
+2020-06-21 00:11:01.771 CEST [13920] WYRAŻENIE:  ALTER TABLE tranzakcje 
+	ALTER COLUMN nr_tranzacji
+	SET DEFAULT nextval('seq_nr_tranazkcji');
+2020-06-21 00:11:07.682 CEST [13920] BŁĄD:  relacja "seq_id_tranazkcji" nie istnieje
+2020-06-21 00:11:07.682 CEST [13920] WYRAŻENIE:  ALTER SEQUENCE seq_id_tranazkcji OWNED BY
+	tranzakcje.nr_tra
+	;
+2020-06-21 00:11:33.215 CEST [13920] BŁĄD:  relacja "seq_id_tranazkcji" nie istnieje
+2020-06-21 00:11:33.215 CEST [13920] WYRAŻENIE:  ALTER SEQUENCE seq_id_tranazkcji OWNED BY
+	tranzakcje.nr_tranzacji;
+2020-06-21 00:11:50.668 CEST [13920] BŁĄD:  kolumna "nr_tranzacji" relacji "tranzakcje" nie istnieje
+2020-06-21 00:11:50.668 CEST [13920] WYRAŻENIE:  ALTER SEQUENCE seq_nr_tranazkcji OWNED BY
+	tranzakcje.nr_tranzacji;

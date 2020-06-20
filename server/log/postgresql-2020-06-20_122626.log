@@ -46,3 +46,4 @@
 2020-06-20 12:45:13.551 CEST [12208] WYRAŻENIE:  CREATE TABLE kontenery (id INT PRIMARY KEY UNIQUE NOT NULL,
 	pojemnosc DOUBLE,
 	data_przegladu DATE);
+2020-06-20 12:54:07.324 CEST [12208] DZIENNIK:  nie można otrzymać danych od klienta: unrecognized winsock error 10054
