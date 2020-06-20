@@ -1,0 +1,7 @@
+2020-06-20 11:58:50.706 CEST [10328] DZIENNIK:  system bazy danych zosta³ zamkniêty 2020-06-20 11:58:41 CEST
+2020-06-20 11:58:50.815 CEST [2816] DZIENNIK:  system bazy danych jest gotowy do przyjmowania po³¹czeñ
+2020-06-20 12:19:45.623 CEST [2816] DZIENNIK:  odebrano ¿¹danie szybkiego zamkniêcia
+2020-06-20 12:19:45.627 CEST [2816] DZIENNIK:  przerywanie wszelkich aktywnych transakcji
+2020-06-20 12:19:45.634 CEST [2816] DZIENNIK:  background worker "logical replication launcher" (PID 14308) wyszed³ z kodem zakoñczenia 1
+2020-06-20 12:19:45.640 CEST [13676] DZIENNIK:  zamykanie
+2020-06-20 12:19:45.670 CEST [2816] DZIENNIK:  system bazy danych jest zamkniêty

@@ -1,0 +1,48 @@
+2020-06-20 12:26:26.741 CEST [5048] DZIENNIK:  system bazy danych zosta� zamkni�ty 2020-06-20 12:25:39 CEST
+2020-06-20 12:26:26.828 CEST [4564] DZIENNIK:  system bazy danych jest gotowy do przyjmowania po��cze�
+2020-06-20 12:29:46.288 CEST [13796] KATASTROFALNY:  autoryzacja has�em nie powiod�a si� dla u�ytkownika "postgres"
+2020-06-20 12:29:46.288 CEST [13796] SZCZEGӣY:  Nie zgadza si� has�o u�ytkownika "postgres".
+	Po��czenie dopasowane do linii 82 pg_hba.conf: "host    all             all             ::1/128                 md5"
+2020-06-20 12:37:05.235 CEST [12208] BŁĄD:  błąd składni w lub blisko "AUTO_INCREMENT" przy znaku 59
+2020-06-20 12:37:05.235 CEST [12208] WYRAŻENIE:  CREATE TABLE zlecenia (nr INT PRIMARY KEY UNIQUE NOT NULL AUTO_INCREMENT, 
+	towar CHAR, 
+	cel CHAR, 
+	pochodzenie CHAR,
+	termin DATETIME,
+	rejestracha_samochodu CHAR,
+	specialne_warunki CHAR,
+	id_pracownika INT,
+	id_klienta INT,
+	id_kontenera INT);
+2020-06-20 12:37:17.502 CEST [12208] BŁĄD:  typ "datetime" nie istnieje przy znaku 110
+2020-06-20 12:37:17.502 CEST [12208] WYRAŻENIE:  CREATE TABLE zlecenia (nr INT PRIMARY KEY UNIQUE NOT NULL, 
+	towar CHAR, 
+	cel CHAR, 
+	pochodzenie CHAR,
+	termin DATETIME,
+	rejestracha_samochodu CHAR,
+	specialne_warunki CHAR,
+	id_pracownika INT,
+	id_klienta INT,
+	id_kontenera INT);
+2020-06-20 12:39:16.228 CEST [12208] BŁĄD:  błąd składni w lub blisko "DR" przy znaku 23
+2020-06-20 12:39:16.228 CEST [12208] WYRAŻENIE:  ALTER TABLE 	zlecenia
+	DR;
+2020-06-20 12:40:44.985 CEST [12208] BŁĄD:  błąd składni w lub blisko "PRIMARY" przy znaku 34
+2020-06-20 12:40:44.985 CEST [12208] WYRAŻENIE:  CREATE TABLE klienci (id_klienta PRIMARY KEY UNIQUE NOT NULL.
+	imie CHAR NOT NULL,
+	nazwisko CHAR NOT NULL,
+	telefon INT,
+	pesel INT NOT NULL,
+	dodatkowe_informacje CHAR);
+2020-06-20 12:41:02.385 CEST [12208] BŁĄD:  błąd składni w lub blisko "." przy znaku 65
+2020-06-20 12:41:02.385 CEST [12208] WYRAŻENIE:  CREATE TABLE klienci (id_klienta INT PRIMARY KEY UNIQUE NOT NULL.
+	imie CHAR NOT NULL,
+	nazwisko CHAR NOT NULL,
+	telefon INT,
+	pesel INT NOT NULL,
+	dodatkowe_informacje CHAR);
+2020-06-20 12:45:13.551 CEST [12208] BŁĄD:  typ "double" nie istnieje przy znaku 71
+2020-06-20 12:45:13.551 CEST [12208] WYRAŻENIE:  CREATE TABLE kontenery (id INT PRIMARY KEY UNIQUE NOT NULL,
+	pojemnosc DOUBLE,
+	data_przegladu DATE);
