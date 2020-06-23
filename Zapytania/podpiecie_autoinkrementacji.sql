@@ -32,7 +32,7 @@ CREATE SEQUENCE seq_nr_tranazkcji
 				START WITH 1
 				INCREMENT BY 1;
 ALTER TABLE tranzakcje 
-			ALTER COLUMN nr_tranzakcji
+			ALTER COLUMN nr_traznazkcji
 			SET DEFAULT nextval('seq_nr_tranazkcji');
 ALTER SEQUENCE seq_nr_tranazkcji OWNED BY
-			tranzakcje.nr_tranzakcji;
+			tranzakcje.nr_traznazkcji;

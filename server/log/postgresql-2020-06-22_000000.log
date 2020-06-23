@@ -1,0 +1,7 @@
+2020-06-22 01:59:02.073 CEST [4500] DZIENNIK:  odebrano ¿¹danie szybkiego zamkniêcia
+2020-06-22 01:59:02.085 CEST [4500] DZIENNIK:  przerywanie wszelkich aktywnych transakcji
+2020-06-22 01:59:02.095 CEST [5500] B£¥D:  anulowano polecenie na skutek ¿¹dania u¿ytkownika
+2020-06-22 01:59:02.096 CEST [5472] B£¥D:  anulowano polecenie na skutek ¿¹dania u¿ytkownika
+2020-06-22 01:59:02.106 CEST [4500] DZIENNIK:  background worker "logical replication launcher" (PID 5500) wyszed³ z kodem zakoñczenia 1
+2020-06-22 01:59:02.112 CEST [5360] DZIENNIK:  zamykanie
+2020-06-22 01:59:02.219 CEST [4500] DZIENNIK:  system bazy danych jest zamkniêty

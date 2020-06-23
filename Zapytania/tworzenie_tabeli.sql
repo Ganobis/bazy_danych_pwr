@@ -31,4 +31,18 @@ CREATE TABLE wyplaty (id_pracownika INT NOT NULL,
 					  data DATE NOT NULL,
 					  pensja FLOAT(8) NOT NULL,
 					  premia FLOAT(8));
-#
+#Tworzenie tabeli pracownicy
+CREATE TABLE wyplaty (id_pracownika INT PRIMARY KEY UNIQUE NOT NULL,
+					  imie CHAR(50) NOT NULL,
+					  nazwisko CHAR(50) NOT NULL,
+					  pesel CHAR(11) NOT NULL.
+					  nr_konta CHAR(26) NOT NULL,
+					  miejsce_zamieszkania CHAR(70) NOT NULL,
+					  telefon CHAR(9) NOT NULL,
+					  data_zatrudnienia DATE NOT NULL,
+					  data_konca_umowy DATE,
+					  stanowiska CHAR(50) NOT NULL);
+#Tworzenie tabeli tranzakcje
+CREATE TABLE tranzakcje (nr_traznazkcji INT PRIMARY KEY UNIQUE NOT NULL,
+						uznania INT,
+						kwota REAL NOT NULL);

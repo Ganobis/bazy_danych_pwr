@@ -1,0 +1,126 @@
+2020-06-22 02:01:28.957 CEST [4948] DZIENNIK:  system bazy danych zosta� zamkni�ty 2020-06-22 01:59:02 CEST
+2020-06-22 02:01:29.032 CEST [4532] DZIENNIK:  system bazy danych jest gotowy do przyjmowania po��cze�
+2020-06-22 21:56:22.322 CEST [16576] BŁĄD:  znak sekwencją bajtów 0x88 kodowany w "WIN1250" nie ma równoważnego w kodowaniu "UTF8"
+2020-06-22 21:58:55.512 CEST [16576] BŁĄD:  błąd składni w lub blisko ";" przy znaku 2125
+2020-06-22 21:58:55.512 CEST [16576] WYRAŻENIE:  INSERT INTO pracownicy(imie, nazwisko, pesel, nr_konta, telefon, data_zatrudnienia, data_konca_umowy, stanowiska)
+	VALUES
+	('ARTUR', 'WRŕBEL', '99010638257', '30452375187837961004336522', 'Ruda —lĄska', '709372792', '04-01-2020', '', 'szef'),
+	('OLIWIA', 'PAWLAK', '80101057198', '29534524209976604658941569', 'Cz©stochowa', '557759085', '04-01-2020', '', 'kierownik transportu'),
+	('JADWIGA', 'SZEWCZYK', '83122695857', '15667195523328973948394472', 'Rybnik', '647029361', '04-01-2020', '', 'kierowca'),
+	('LENA', 'ZAJ¤C', '55072788273', '58320830834247001177383086', 'DĄbrowa G˘rnicza', '535848020', '04-01-2020', '', 'magazynier'),
+	('JADWIGA', 'OSTROWSKI', '97082597494', '23372644275178982630223886', 'Tychy', '782008948', '04-01-2020', '', 'ksi©gowy'),
+	('KONSTANTY', 'MAZUR', '56020246377', '24145628760261953838348660', 'Ruda —lĄska', '583453310', '04-01-2020', '04-01-2021', 'kierowca'),
+	('DAWID', 'ZALEWSKI', '67050199254', '34028927910510368194628184', 'Rybnik', '563633669', '04-01-2020', '04-01-2021', 'kierowca'),
+	('JERZY', 'SIKORA', '89040232875', '18195657307892690514882886', 'Ruda —lĄska', '590510707', '04-01-2020', '04-01-2021', 'kierowca'),
+	('KLAUDIA', 'LEWANDOWSKI', '93092915567', '35371434016772463971635937', 'Bielsko-Biala', '746246785', '04-01-2020', '04-01-2021', 'konserwator powieszchni plaskiej'),
+	('KUBA', 'MICHALAK', '91091984557', '49737009817780353542492587', 'Zabrze', '606906689', '23-01-2020', '23-07-2020', 'magazynier'),
+	('MIťOSZ', 'GRABOWSKI', '70100332626', '68010243899127693835372970', 'Zabrze', '676277863', '21-02-2020', '21-08-2020', 'kierowca'),
+	('EWA', 'ZALEWSKI', '73072768622', '10425999918888558136063222', 'Rybnik', '658230385', '08-03-2020', '', 'kierownik transportu'),
+	('OLIVIER', 'ADAMCZYK', '62101011189', '45920464427821172727156559', 'Rybnik', '739802096', '09-03-2020', '', 'osoba planujĄca trasy'),
+	('CEZARY', 'NOWICKI', '69100422297', '43170557364622203816512213', 'Chorz˘w', '766367386', '12-06-2020', '12-09-2020', 'magazynier'),
+	('ALEKSANDER', 'GŕRSKI', '71080875895', '79010567370266607590602742', 'Katowice', '737224773', '20-06-2020', '20-09-2020', 'kierowca'),
+	;
+2020-06-22 21:59:04.700 CEST [16576] BŁĄD:  INSERT posiada więcej wyrażeń niż docelowych kolumn przy znaku 233
+2020-06-22 21:59:04.700 CEST [16576] WYRAŻENIE:  INSERT INTO pracownicy(imie, nazwisko, pesel, nr_konta, telefon, data_zatrudnienia, data_konca_umowy, stanowiska)
+	VALUES
+	('ARTUR', 'WRŕBEL', '99010638257', '30452375187837961004336522', 'Ruda —lĄska', '709372792', '04-01-2020', '', 'szef'),
+	('OLIWIA', 'PAWLAK', '80101057198', '29534524209976604658941569', 'Cz©stochowa', '557759085', '04-01-2020', '', 'kierownik transportu'),
+	('JADWIGA', 'SZEWCZYK', '83122695857', '15667195523328973948394472', 'Rybnik', '647029361', '04-01-2020', '', 'kierowca'),
+	('LENA', 'ZAJ¤C', '55072788273', '58320830834247001177383086', 'DĄbrowa G˘rnicza', '535848020', '04-01-2020', '', 'magazynier'),
+	('JADWIGA', 'OSTROWSKI', '97082597494', '23372644275178982630223886', 'Tychy', '782008948', '04-01-2020', '', 'ksi©gowy'),
+	('KONSTANTY', 'MAZUR', '56020246377', '24145628760261953838348660', 'Ruda —lĄska', '583453310', '04-01-2020', '04-01-2021', 'kierowca'),
+	('DAWID', 'ZALEWSKI', '67050199254', '34028927910510368194628184', 'Rybnik', '563633669', '04-01-2020', '04-01-2021', 'kierowca'),
+	('JERZY', 'SIKORA', '89040232875', '18195657307892690514882886', 'Ruda —lĄska', '590510707', '04-01-2020', '04-01-2021', 'kierowca'),
+	('KLAUDIA', 'LEWANDOWSKI', '93092915567', '35371434016772463971635937', 'Bielsko-Biala', '746246785', '04-01-2020', '04-01-2021', 'konserwator powieszchni plaskiej'),
+	('KUBA', 'MICHALAK', '91091984557', '49737009817780353542492587', 'Zabrze', '606906689', '23-01-2020', '23-07-2020', 'magazynier'),
+	('MIťOSZ', 'GRABOWSKI', '70100332626', '68010243899127693835372970', 'Zabrze', '676277863', '21-02-2020', '21-08-2020', 'kierowca'),
+	('EWA', 'ZALEWSKI', '73072768622', '10425999918888558136063222', 'Rybnik', '658230385', '08-03-2020', '', 'kierownik transportu'),
+	('OLIVIER', 'ADAMCZYK', '62101011189', '45920464427821172727156559', 'Rybnik', '739802096', '09-03-2020', '', 'osoba planujĄca trasy'),
+	('CEZARY', 'NOWICKI', '69100422297', '43170557364622203816512213', 'Chorz˘w', '766367386', '12-06-2020', '12-09-2020', 'magazynier'),
+	('ALEKSANDER', 'GŕRSKI', '71080875895', '79010567370266607590602742', 'Katowice', '737224773', '20-06-2020', '20-09-2020', 'kierowca');
+2020-06-22 22:00:16.520 CEST [16576] BŁĄD:  nieprawidłowa składnia wejścia dla typu date: "" przy znaku 251
+2020-06-22 22:00:16.520 CEST [16576] WYRAŻENIE:  INSERT INTO pracownicy(imie, nazwisko, pesel, nr_konta, miejsce_zamieszkania, telefon, data_zatrudnienia, data_konca_umowy, stanowiska)
+	VALUES
+	('ARTUR', 'WRŕBEL', '99010638257', '30452375187837961004336522', 'Ruda —lĄska', '709372792', '04-01-2020', '', 'szef'),
+	('OLIWIA', 'PAWLAK', '80101057198', '29534524209976604658941569', 'Cz©stochowa', '557759085', '04-01-2020', '', 'kierownik transportu'),
+	('JADWIGA', 'SZEWCZYK', '83122695857', '15667195523328973948394472', 'Rybnik', '647029361', '04-01-2020', '', 'kierowca'),
+	('LENA', 'ZAJ¤C', '55072788273', '58320830834247001177383086', 'DĄbrowa G˘rnicza', '535848020', '04-01-2020', '', 'magazynier'),
+	('JADWIGA', 'OSTROWSKI', '97082597494', '23372644275178982630223886', 'Tychy', '782008948', '04-01-2020', '', 'ksi©gowy'),
+	('KONSTANTY', 'MAZUR', '56020246377', '24145628760261953838348660', 'Ruda —lĄska', '583453310', '04-01-2020', '04-01-2021', 'kierowca'),
+	('DAWID', 'ZALEWSKI', '67050199254', '34028927910510368194628184', 'Rybnik', '563633669', '04-01-2020', '04-01-2021', 'kierowca'),
+	('JERZY', 'SIKORA', '89040232875', '18195657307892690514882886', 'Ruda —lĄska', '590510707', '04-01-2020', '04-01-2021', 'kierowca'),
+	('KLAUDIA', 'LEWANDOWSKI', '93092915567', '35371434016772463971635937', 'Bielsko-Biala', '746246785', '04-01-2020', '04-01-2021', 'konserwator powieszchni plaskiej'),
+	('KUBA', 'MICHALAK', '91091984557', '49737009817780353542492587', 'Zabrze', '606906689', '23-01-2020', '23-07-2020', 'magazynier'),
+	('MIťOSZ', 'GRABOWSKI', '70100332626', '68010243899127693835372970', 'Zabrze', '676277863', '21-02-2020', '21-08-2020', 'kierowca'),
+	('EWA', 'ZALEWSKI', '73072768622', '10425999918888558136063222', 'Rybnik', '658230385', '08-03-2020', '', 'kierownik transportu'),
+	('OLIVIER', 'ADAMCZYK', '62101011189', '45920464427821172727156559', 'Rybnik', '739802096', '09-03-2020', '', 'osoba planujĄca trasy'),
+	('CEZARY', 'NOWICKI', '69100422297', '43170557364622203816512213', 'Chorz˘w', '766367386', '12-06-2020', '12-09-2020', 'magazynier'),
+	('ALEKSANDER', 'GŕRSKI', '71080875895', '79010567370266607590602742', 'Katowice', '737224773', '20-06-2020', '20-09-2020', 'kierowca');
+2020-06-22 22:03:05.041 CEST [16576] BŁĄD:  znak sekwencją bajtów 0x88 kodowany w "WIN1250" nie ma równoważnego w kodowaniu "UTF8"
+2020-06-22 22:03:29.353 CEST [16576] BŁĄD:  błąd składni w lub blisko "1" przy znaku 1
+2020-06-22 22:03:29.353 CEST [16576] WYRAŻENIE:  1
+	INSERT INTO pracownicy(imie, nazwisko, pesel, nr_konta, telefon, data_zatrudnienia, data_konca_umowy, stanowiska)
+	VALUES
+	("NELA", "WOJCIECHOWSKI", "99010638257", "30452375187837961004336522", "Zabrze", "709372792", "04-01-2020", "", "szef"),
+	("NIKODEM", "KOWALSKI", "80101057198", "29534524209976604658941569", "DĄbrowa G˘rnicza", "557759085", "04-01-2020", "", "kierownik transportu"),
+	("DOMINIKA", "LEWANDOWSKI", "83122695857", "15667195523328973948394472", "DĄbrowa G˘rnicza", "647029361", "04-01-2020", "", "kierowca"),
+	("KSAWERY", "PIOTROWSKI", "55072788273", "58320830834247001177383086", "Chorz˘w", "535848020", "04-01-2020", "", "magazynier"),
+	("MAGDALENA", "KOZťOWSKI", "97082597494", "23372644275178982630223886", "Gliwice", "782008948", "04-01-2020", "", "ksi©gowy"),
+	("ANIELA", "GŕRSKI", "56020246377", "24145628760261953838348660", "Rybnik", "583453310", "04-01-2020", "04-01-2021", "kierowca"),
+	("LEO", "KOWALCZYK", "67050199254", "34028927910510368194628184", "Bielsko-Biala", "563633669", "04-01-2020", "04-01-2021", "kierowca"),
+	("MARIKA", "KAMIăSKI", "89040232875", "18195657307892690514882886", "Zabrze", "590510707", "04-01-2020", "04-01-2021", "kierowca"),
+	("EMIL", "OSTROWSKI", "93092915567", "35371434016772463971635937", "Rybnik", "746246785", "04-01-2020", "04-01-2021", "konserwator powieszchni plaskiej"),
+	("ZOJA", "D¤BROWSKI", "91091984557", "49737009817780353542492587", "Rybnik", "606906689", "23-01-2020", "23-07-2020", "magazynier"),
+	("ZOFIA", "BARAN", "70100332626", "68010243899127693835372970", "Cz©stochowa", "676277863", "21-02-2020", "21-08-2020", "kierowca"),
+	("IDA", "MICHALAK", "73072768622", "10425999918888558136063222", "Sosnowiec", "658230385", "08-03-2020", "", "kierownik transportu"),
+	("IGA", "MAJEWSKI", "62101011189", "45920464427821172727156559", "DĄbrowa G˘rnicza", "739802096", "09-03-2020", "", "osoba planujĄca trasy"),
+	("MIA", "MAZUR", "69100422297", "43170557364622203816512213", "Tychy", "766367386", "12-06-2020", "12-09-2020", "magazynier"),
+	("KAROL", "SZYMAăSKI", "71080875895", "79010567370266607590602742", "Gliwice", "737224773", "20-06-2020", "20-09-2020", "kierowca");
+2020-06-22 22:03:32.823 CEST [16576] BŁĄD:  identyfikator ogranicznika o długości zero w lub blisko """" przy znaku 230
+2020-06-22 22:03:32.823 CEST [16576] WYRAŻENIE:  INSERT INTO pracownicy(imie, nazwisko, pesel, nr_konta, telefon, data_zatrudnienia, data_konca_umowy, stanowiska)
+	VALUES
+	("NELA", "WOJCIECHOWSKI", "99010638257", "30452375187837961004336522", "Zabrze", "709372792", "04-01-2020", "", "szef"),
+	("NIKODEM", "KOWALSKI", "80101057198", "29534524209976604658941569", "DĄbrowa G˘rnicza", "557759085", "04-01-2020", "", "kierownik transportu"),
+	("DOMINIKA", "LEWANDOWSKI", "83122695857", "15667195523328973948394472", "DĄbrowa G˘rnicza", "647029361", "04-01-2020", "", "kierowca"),
+	("KSAWERY", "PIOTROWSKI", "55072788273", "58320830834247001177383086", "Chorz˘w", "535848020", "04-01-2020", "", "magazynier"),
+	("MAGDALENA", "KOZťOWSKI", "97082597494", "23372644275178982630223886", "Gliwice", "782008948", "04-01-2020", "", "ksi©gowy"),
+	("ANIELA", "GŕRSKI", "56020246377", "24145628760261953838348660", "Rybnik", "583453310", "04-01-2020", "04-01-2021", "kierowca"),
+	("LEO", "KOWALCZYK", "67050199254", "34028927910510368194628184", "Bielsko-Biala", "563633669", "04-01-2020", "04-01-2021", "kierowca"),
+	("MARIKA", "KAMIăSKI", "89040232875", "18195657307892690514882886", "Zabrze", "590510707", "04-01-2020", "04-01-2021", "kierowca"),
+	("EMIL", "OSTROWSKI", "93092915567", "35371434016772463971635937", "Rybnik", "746246785", "04-01-2020", "04-01-2021", "konserwator powieszchni plaskiej"),
+	("ZOJA", "D¤BROWSKI", "91091984557", "49737009817780353542492587", "Rybnik", "606906689", "23-01-2020", "23-07-2020", "magazynier"),
+	("ZOFIA", "BARAN", "70100332626", "68010243899127693835372970", "Cz©stochowa", "676277863", "21-02-2020", "21-08-2020", "kierowca"),
+	("IDA", "MICHALAK", "73072768622", "10425999918888558136063222", "Sosnowiec", "658230385", "08-03-2020", "", "kierownik transportu"),
+	("IGA", "MAJEWSKI", "62101011189", "45920464427821172727156559", "DĄbrowa G˘rnicza", "739802096", "09-03-2020", "", "osoba planujĄca trasy"),
+	("MIA", "MAZUR", "69100422297", "43170557364622203816512213", "Tychy", "766367386", "12-06-2020", "12-09-2020", "magazynier"),
+	("KAROL", "SZYMAăSKI", "71080875895", "79010567370266607590602742", "Gliwice", "737224773", "20-06-2020", "20-09-2020", "kierowca");
+2020-06-22 22:03:41.734 CEST [16576] BŁĄD:  błąd składni w lub blisko ""KAROL"" przy znaku 2
+2020-06-22 22:03:41.734 CEST [16576] WYRAŻENIE:  ("KAROL", "SZYMAăSKI", "71080875895", "79010567370266607590602742", "Gliwice", "737224773", "20-06-2020", "20-09-2020", "kierowca");
+2020-06-22 22:04:03.686 CEST [16576] BŁĄD:  błąd składni w lub blisko "'d pracownicy
+	'" przy znaku 1
+2020-06-22 22:04:03.686 CEST [16576] WYRAŻENIE:  'd pracownicy
+	'
+	;
+2020-06-22 22:04:57.870 CEST [16576] BŁĄD:  kolumna "NELA" nie istnieje przy znaku 123
+2020-06-22 22:04:57.870 CEST [16576] WYRAŻENIE:  INSERT INTO pracownicy(imie, nazwisko, pesel, nr_konta, telefon, data_zatrudnienia, data_konca_umowy, stanowiska)
+	VALUES
+	("NELA", "WOJCIECHOWSKI", "99010638257", "30452375187837961004336522", "Zabrze", "709372792", "04-01-2020", "NULL", "szef"),
+	("NIKODEM", "KOWALSKI", "80101057198", "29534524209976604658941569", "DĄbrowa G˘rnicza", "557759085", "04-01-2020", "NULL", "kierownik transportu"),
+	("DOMINIKA", "LEWANDOWSKI", "83122695857", "15667195523328973948394472", "DĄbrowa G˘rnicza", "647029361", "04-01-2020", "NULL", "kierowca"),
+	("KSAWERY", "PIOTROWSKI", "55072788273", "58320830834247001177383086", "Chorz˘w", "535848020", "04-01-2020", "NULL", "magazynier"),
+	("MAGDALENA", "KOZťOWSKI", "97082597494", "23372644275178982630223886", "Gliwice", "782008948", "04-01-2020", "NULL", "ksi©gowy"),
+	("ANIELA", "GŕRSKI", "56020246377", "24145628760261953838348660", "Rybnik", "583453310", "04-01-2020", "04-01-2021", "kierowca"),
+	("LEO", "KOWALCZYK", "67050199254", "34028927910510368194628184", "Bielsko-Biala", "563633669", "04-01-2020", "04-01-2021", "kierowca"),
+	("MARIKA", "KAMIăSKI", "89040232875", "18195657307892690514882886", "Zabrze", "590510707", "04-01-2020", "04-01-2021", "kierowca"),
+	("EMIL", "OSTROWSKI", "93092915567", "35371434016772463971635937", "Rybnik", "746246785", "04-01-2020", "04-01-2021", "konserwator powieszchni plaskiej"),
+	("ZOJA", "D¤BROWSKI", "91091984557", "49737009817780353542492587", "Rybnik", "606906689", "23-01-2020", "23-07-2020", "magazynier"),
+	("ZOFIA", "BARAN", "70100332626", "68010243899127693835372970", "Cz©stochowa", "676277863", "21-02-2020", "21-08-2020", "kierowca"),
+	("IDA", "MICHALAK", "73072768622", "10425999918888558136063222", "Sosnowiec", "658230385", "08-03-2020", "NULL", "kierownik transportu"),
+	("IGA", "MAJEWSKI", "62101011189", "45920464427821172727156559", "DĄbrowa G˘rnicza", "739802096", "09-03-2020", "NULL", "osoba planujĄca trasy"),
+	("MIA", "MAZUR", "69100422297", "43170557364622203816512213", "Tychy", "766367386", "12-06-2020", "12-09-2020", "magazynier"),
+	("KAROL", "SZYMAăSKI", "71080875895", "79010567370266607590602742", "Gliwice", "737224773", "20-06-2020", "20-09-2020", "kierowca");
+2020-06-22 22:06:00.788 CEST [16576] BŁĄD:  błąd składni w lub blisko "'ALEKSANDER'" przy znaku 2
+2020-06-22 22:06:00.788 CEST [16576] WYRAŻENIE:  ('ALEKSANDER', 'GŕRSKI', '71080875895', '79010567370266607590602742', 'Katowice', '73
+	'
+	)
+	;

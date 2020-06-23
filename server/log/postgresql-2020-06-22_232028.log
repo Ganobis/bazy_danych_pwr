@@ -1,0 +1,6 @@
+2020-06-22 23:20:28.163 CEST [5076] DZIENNIK:  dzia³anie systemu bazy danych zosta³o przerwane; ostatnie znane podniesienie 2020-06-22 22:08:02 CEST
+2020-06-22 23:20:32.920 CEST [5076] DZIENNIK:  system bazy danych nie zosta³ poprawnie zamkniêty; trwa automatyczne odzyskiwanie
+2020-06-22 23:20:32.928 CEST [5076] DZIENNIK:  ponowienie uruchamia siê w 0/17CE170
+2020-06-22 23:20:32.928 CEST [5076] DZIENNIK:  niepoprawna d³ugoœæ rekordu w 0/17CE258: oczekiwana 24, jest 0
+2020-06-22 23:20:32.929 CEST [5076] DZIENNIK:  ponowienie wykonane w 0/17CE220
+2020-06-22 23:20:32.975 CEST [4644] DZIENNIK:  system bazy danych jest gotowy do przyjmowania po³¹czeñ
