@@ -1,0 +1,25 @@
+1. Aby uruchoić PostgreSQL z kodowaniem WIN1250 należy:
+-uruchomić cmd z uprawinieniami administatatora.(konsole)
+-użyć komnedy:
+	cmd.exe /c chcp 1250
+-następnie przejśc do katologu z PostgreSQL komendą cd
+(u mnie jest to- "cd C:\Program Files\PostgreSQL\12\scripts\runpsql.bat")
+-uruchomić przez konsole program SQL Sheel (psql).bat
+2. Aby zobaczyć katalog w którym znajduje się nasz server należy użyć komendy(w psql)
+	show data_directory;
+3. Aby stworzyć baze danych należy użyć komendy
+	CREATE DATABASE nazwa;
+4. Aby zobaczyć nasze bazy danych używamy komendy
+	\list
+5. Aby połączyć się z bazą używamy komendy
+	\c nazwa_bazy
+6. Aby zobaczyć zawartość danych należy użyć komendy
+	\d
+7. Aby zobaczyć szczegóły tabeli, sekwencji etc należy użyć komendy
+	\d nazwa_kolumnt_itd
+8. Aby szybko usunąć wszystkie kolumny należyć użyć komendy
+	select 'drop table if exists "' || tablename || '" cascade;' from pg_tables where tablename NOT LIKE 'pg%' and tablename NOT LIKE 'sql%';
+a następnie skopiować wygenerowany tekst i wkleić do konsoli.
+9. A w razie innych problemów należy użyć komendy
+	\h
+co oznacza po prosu help :)
