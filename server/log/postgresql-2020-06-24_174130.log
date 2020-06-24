@@ -1,0 +1,59 @@
+2020-06-24 17:41:30.526 CEST [5116] DZIENNIK:  dzia�anie systemu bazy danych zosta�o przerwane; ostatnie znane podniesienie 2020-06-24 17:40:17 CEST
+2020-06-24 17:41:35.951 CEST [5116] DZIENNIK:  system bazy danych nie zosta� poprawnie zamkni�ty; trwa automatyczne odzyskiwanie
+2020-06-24 17:41:35.961 CEST [5116] DZIENNIK:  ponowienie uruchamia si� w 0/1A26EB0
+2020-06-24 17:41:35.962 CEST [5116] DZIENNIK:  niepoprawna d�ugo�� rekordu w 0/1A26F98: oczekiwana 24, jest 0
+2020-06-24 17:41:35.962 CEST [5116] DZIENNIK:  ponowienie wykonane w 0/1A26F60
+2020-06-24 17:41:36.049 CEST [4484] DZIENNIK:  system bazy danych jest gotowy do przyjmowania po��cze�
+2020-06-24 17:52:37.567 CEST [12788] KATASTROFALNY:  baza danych "\" nie istnieje
+2020-06-24 17:55:42.661 CEST [9212] BŁĄD:  relacja "wyplaty" już istnieje
+2020-06-24 17:55:42.661 CEST [9212] WYRAŻENIE:  CREATE TABLE wyplaty (id_pracownika INT PRIMARY KEY UNIQUE NOT NULL,
+	  imie CHAR(50) NOT NULL,
+	  nazwisko CHAR(50) NOT NULL,
+	  pesel CHAR(11) NOT NULL,
+	  nr_konta CHAR(26) NOT NULL,
+	  miejsce_zamieszkania CHAR(70) NOT NULL,
+	  telefon CHAR(9) NOT NULL,
+	  data_zatrudnienia DATE NOT NULL,
+	  data_konca_umowy DATE,
+	  stanowiska CHAR(50) NOT NULL);
+2020-06-24 18:17:47.254 CEST [9212] BŁĄD:  błąd składni w lub blisko "', '" przy znaku 130
+2020-06-24 18:17:47.254 CEST [9212] WYRAŻENIE:  INSERT INTO klienci(imie, nazwisko, telefon, pesel, dodatkowe_informacje)
+	VALUES
+	('OLIWIA', 'OSTROWSKI', '786415657', 86082288488', 'klient prywatny'),
+	('BŁAŻEJ', 'SIKORA', '726607994', 76022773954', 'klient stały'),
+	('SARA', 'KAMIŃSKI', '619729307', 73061622498', 'klient stały'),
+	('KSAWERY', 'KRAWCZYK', '600241462', 66100871663', 'klient prywatny'),
+	('JADWIGA', 'KOWALSKI', '698798583', 91041598452', 'klient zagraniczny'),
+	('RITA', 'KRÓL', '607447981', 95083133789', 'klient zagraniczny'),
+	('IGNACY', 'NOWAKOWSKI', '535592945', 86030642355', 'klient stały'),
+	('PRZEMYSŁAW', 'OSTROWSKI', '605808481', 92013114335', 'klient ważny'),
+	('SARA', 'KRÓL', '522711970', 84120764914', NULL),
+	('ADA', 'PAWLAK', '537927576', 00241334546', 'klient zagraniczny'),
+	('EMMA', 'STĘPIEŃ', '667150073', 91042286622', 'klient zagraniczny'),
+	('DANIEL', 'PAWŁOWSKI', '621935137', 51110652647', 'klient stały'),
+	('KAROL', 'DĄBROWSKI', '526487670', 91122757477', NULL),
+	('OLIVIA', 'OLSZEWSKI', '636859445', 39111278365', NULL),
+	('PAWEŁ', 'OSTROWSKI', '616927932', 90051652288', NULL),
+	('FELIKS', 'MICHALSKI', '784625499', 60061474194', 'klient stały'),
+	('SZYMON', 'DĄBROWSKI', '532770199', 82020645748', 'klient prywatny'),
+	('MATYLDA', 'KOZŁOWSKI', '562102121', 71022881599', NULL),
+	('LILIANNA', 'ZIELIŃSKI', '516678232', 99052799927', 'klient ważny'),
+	('JOANNA', 'MAJEWSKI', '610011349', 94112871948', 'klient zagraniczny'),
+	('WIKTOR', 'WALCZAK', '592465073', 92082028531', NULL),
+	('NELA', 'KOZŁOWSKI', '614829649', 85061592143', NULL),
+	('KAZIMIERZ', 'MALINOWSKI', '509311948', 70021117346', NULL),
+	('DANIEL', 'WITKOWSKI', '678576045', 55051533261', 'klient prywatny'),
+	('ROZALIA', 'SZYMAŃSKI', '601831230', 00243069998', NULL),
+	('WIKTORIA', 'WOŹNIAK', '590784178', 44091893725', 'klient ważny'),
+	('STANISŁAW', 'JANKOWSKI', '562474011', 47050474287', NULL),
+	('OLGA', 'RUTKOWSKI', '625561689', 82040923774', 'klient stały'),
+	('LENA', 'JANKOWSKI', '758518768', 75121343671', NULL),
+	('PAWEŁ', 'MAJEWSKI', '711327636', 80101698698', 'klient zagraniczny'),
+	('IDA', 'KRÓL', '609041387', 97042596741', NULL),
+	('DAWID', 'WALCZAK', '660233683', 40082783497', NULL),
+	('MARIA', 'JABŁOŃSKI', '579578903', 78101627778', NULL),
+	('PAWEŁ', 'WÓJCIK', '607617392', 51060882338', NULL),
+	('MAREK', 'PAWLAK', '728062736', 97030278723', NULL);
+	'
+	)
+	;

@@ -3335,3 +3335,14 @@
 	('PDK (produkty duÅ¼ej komsumpcji)', 'Katowice', 'Katowice', '20-06-2020', 'SK31221', 'wymaga oczenikania', '15', '168', '392740174'),
 	('sprzÄ™t budowlany', 'Sosnowiec', 'Ruda ÅšlÄ…ska', '20-06-2020', 'SK10A83', NULL, '3', '168', '742819471'),
 	('sprzÄ™t budowlany', 'ToruÅ„', 'Katowice', '20-06-2020', 'SK22391', NULL, '6', '168', '102181442');
+2020-06-23 22:15:19.173 CEST [4856] DZIENNIK:  nie moÅ¼na otrzymaÄ‡ danych od klienta: unrecognized winsock error 10054
+2020-06-23 22:32:18.766 CEST [12736] DZIENNIK:  nie moÅ¼na otrzymaÄ‡ danych od klienta: unrecognized winsock error 10054
+2020-06-23 22:35:40.639 CEST [224] DZIENNIK:  nie moÅ¼na otrzymaÄ‡ danych od klienta: unrecognized winsock error 10054
+2020-06-23 22:35:40.640 CEST [12344] DZIENNIK:  nie moÅ¼na otrzymaÄ‡ danych od klienta: unrecognized winsock error 10054
+2020-06-23 22:35:40.641 CEST [880] DZIENNIK:  nie moÅ¼na otrzymaÄ‡ danych od klienta: unrecognized winsock error 10054
+2020-06-23 22:35:45.363 CEST [4472] DZIENNIK:  odebrano ¿¹danie szybkiego zamkniêcia
+2020-06-23 22:35:45.377 CEST [4472] DZIENNIK:  przerywanie wszelkich aktywnych transakcji
+2020-06-23 22:35:45.377 CEST [5632] B£¥D:  anulowano polecenie na skutek ¿¹dania u¿ytkownika
+2020-06-23 22:35:45.386 CEST [4472] DZIENNIK:  background worker "logical replication launcher" (PID 5632) wyszed³ z kodem zakoñczenia 1
+2020-06-23 22:35:45.393 CEST [5588] DZIENNIK:  zamykanie
+2020-06-23 22:35:45.431 CEST [4472] DZIENNIK:  system bazy danych jest zamkniêty

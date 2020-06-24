@@ -1,22 +1,12 @@
-
-
-
-
-
-
-
-
-zlecenie piorytetowe
-zlecenie piorytetowe
-przewóz specialny
-
-
-wymaga oczenikania
-wymaga oczenikania
-wymaga oczenikania
-wymaga oczenikania
-
-
-przejazd skontorlowany przez inspekcje
-przejazd skontorlowany przez inspekcje
-przejazd z mandatem karnym
+'klient ważny'
+'klient stały'
+'klient prywatny'
+'klient zagraniczny'
+NULL
+'klient stały'
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL

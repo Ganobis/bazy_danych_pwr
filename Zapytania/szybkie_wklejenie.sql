@@ -1,21 +1,21 @@
 CREATE TABLE zlecenia (nr INT PRIMARY KEY UNIQUE NOT NULL, 
-						towar CHAR NOT NULL, 
-						cel CHAR NOT NULL, 
-						pochodzenie CHAR NOT NULL,
+						towar CHAR(100) NOT NULL, 
+						cel CHAR(60) NOT NULL, 
+						pochodzenie CHAR(60) NOT NULL,
 						termin DATE NOT NULL,
-						rejestracha_samochodu CHAR NOT NULL,
-						specialne_warunki CHAR,
+						rejestracha_samochodu CHAR(7) NOT NULL,
+						specialne_warunki CHAR(200),
 						id_pracownika INT NOT NULL,
 						id_klienta INT NOT NULL,
 						id_kontenera INT NOT NULL);
 CREATE TABLE klienci (id_klienta INT PRIMARY KEY UNIQUE NOT NULL,
-						imie CHAR NOT NULL,
-						nazwisko CHAR NOT NULL,
+						imie CHAR(50) NOT NULL,
+						nazwisko CHAR(50) NOT NULL,
 						telefon INT,
-						pesel INT UNIQUE NOT NULL,
-						dodatkowe_informacje CHAR);
-CREATE TABLE samochody (rejestracja CHAR PRIMARY KEY UNIQUE NOT NULL,
-						rodzaj CHAR,
+						pesel CHAR(11) UNIQUE NOT NULL,
+						dodatkowe_informacje CHAR(200));
+CREATE TABLE samochody (rejestracja CHAR(7) PRIMARY KEY UNIQUE NOT NULL,
+						rodzaj CHAR(50),
 						rok_produkcji INT NOT NULL,
 						data_ubezpieczenia DATE,
 						data_przegladu DATE);
@@ -26,19 +26,19 @@ CREATE TABLE wyplaty (id_pracownika INT NOT NULL,
 					  data DATE NOT NULL,
 					  pensja FLOAT(8) NOT NULL,
 					  premia FLOAT(8));
-CREATE TABLE wyplaty (id_pracownika INT PRIMARY KEY UNIQUE NOT NULL,
-					  imie CHAR(50) NOT NULL,
-					  nazwisko CHAR(50) NOT NULL,
-					  pesel CHAR(11) NOT NULL.
-					  nr_konta CHAR(26) NOT NULL,
-					  miejsce_zamieszkania CHAR(70) NOT NULL,
-					  telefon CHAR(9) NOT NULL,
-					  data_zatrudnienia DATE NOT NULL,
-					  data_konca_umowy DATE,
-					  stanowiska CHAR(50) NOT NULL);
 CREATE TABLE tranzakcje (nr_traznazkcji INT PRIMARY KEY UNIQUE NOT NULL,
 						uznania INT,
 						kwota REAL NOT NULL);
+CREATE TABLE pracownicy (id_pracownika INT PRIMARY KEY UNIQUE NOT NULL,
+						 imie CHAR(60) NOT NULL,
+						 nazwisko CHAR(60) NOT NULL,
+						 pesel CHAR(11) UNIQUE NOT NULL,
+						 nr_konta CHAR(26) UNIQUE NOT NULL,
+						 miejsce_zamieszkania CHAR(50) NOT NULL,
+						 telefon CHAR(9),
+						 data_zatrudnienia DATE NOT NULL,
+						 data_konca_umowy DATE,
+						 stanowiska CHAR(50));
 CREATE SEQUENCE seq_nr_zlecenia
 				START WITH 1
 				INCREMENT BY 1;
@@ -71,29 +71,43 @@ ALTER TABLE tranzakcje
 			SET DEFAULT nextval('seq_nr_tranazkcji');
 ALTER SEQUENCE seq_nr_tranazkcji OWNED BY
 			tranzakcje.nr_traznazkcji;
-INSERT INTO klienci(imie, nazwisko, telefon, pesel)
+INSERT INTO klienci(imie, nazwisko, telefon, pesel, dodatkowe_informacje)
 VALUES
-('Karol', 'Cieslawski', '604784453', '99012301217'),
-('Damian', 'Lukas', '532124654', '99082901583'),
-('IGA', 'GRABOWSKI', '562191568', '61110854314'),
-('ALEXANDER', 'NOWAK', '666847864', '59042373487'),
-('STEFAN', 'GRABOWSKI', '557759085', '69050265573'),
-('DARIA', 'JAWORSKI', '771168594', '00270689381'),
-('NIKOLA', 'TOMASZEWSKI', '666847864', '99041614778'),
-('BLANKA', 'MICHALAK', '621935137', '79020552161'),
-('KONSTANTY', 'PAWLAK', '580256771', '94051069222'),
-('KAJA', 'GÓRSKI', '526487670', '81030468938'),
-('FRANCISZEK', 'STĘPIEŃ', '583453310', '61031281156'),
-('URSZULA', 'KRAWCZYK', '509311948', '57090911314'),
-('APOLONIA', 'MAJEWSKI', '580256771', '71061896677'),
-('GRACJAN', 'ZALEWSKI', '525899764', '91121216975'),
-('JÓZEF', 'JABŁOŃSKI', '641816696', '94032891738'),
-('DOROTA', 'NOWAK', '605808481', '68010869264'),
-('RADOSŁAW', 'WIŚNIEWSKI', '728330642', '76070794118'),
-('MIŁOSZ', 'GÓRSKI', '607447981', '84063077988'),
-('KORNEL', 'KWIATKOWSKI', '741153260', '65042734317'),
-('ADRIANNA', 'ADAMCZYK', '647029361', '87100224367'),
-('MONIKA', 'DĄBROWSKI', '753980086', '82113017373');
+('DOMINIK', 'STĘPIEŃ', '786415657', '86082288488', NULL),
+('PATRYCJA', 'ZAJĄC', '726607994', '76022773954', NULL),
+('NIKODEM', 'SZYMAŃSKI', '619729307', '73061622498', 'klient prywatny'),
+('HENRYK', 'GRABOWSKI', '600241462', '66100871663', 'klient prywatny'),
+('MONIKA', 'KRAWCZYK', '698798583', '91041598452', NULL),
+('MILENA', 'GÓRSKI', '607447981', '95083133789', NULL),
+('ANASTAZJA', 'KRÓL', '535592945', '86030642355', 'klient stały'),
+('LAURA', 'DĄBROWSKI', '605808481', '92013114335', 'klient ważny'),
+('HUBERT', 'OSTROWSKI', '522711970', '84120764914', 'klient zagraniczny'),
+('ROZALIA', 'WITKOWSKI', '537927576', '00241334546', NULL),
+('MIŁOSZ', 'KACZMAREK', '667150073', '91042286622', NULL),
+('MIA', 'WIECZOREK', '621935137', '51110652647', 'klient ważny'),
+('KORNELIA', 'SZYMAŃSKI', '526487670', '91122757477', 'klient zagraniczny'),
+('TYMOTEUSZ', 'GÓRSKI', '636859445', '39111278365', NULL),
+('WERONIKA', 'MAJEWSKI', '616927932', '90051652288', NULL),
+('MARCELINA', 'MICHALAK', '784625499', '60061474194', 'klient zagraniczny'),
+('WITOLD', 'WÓJCIK', '532770199', '82020645748', NULL),
+('GRACJAN', 'KACZMAREK', '562102121', '71022881599', 'klient stały'),
+('KAJETAN', 'STĘPIEŃ', '516678232', '99052799927', NULL),
+('ADRIAN', 'STĘPIEŃ', '610011349', '94112871948', 'klient stały'),
+('LIWIA', 'WOJCIECHOWSKI', '592465073', '92082028531', NULL),
+('ANTONI', 'KOZŁOWSKI', '614829649', '85061592143', 'klient ważny'),
+('ELIZA', 'WOŹNIAK', '509311948', '70021117346', NULL),
+('STEFAN', 'NOWAK', '678576045', '55051533261', NULL),
+('GAJA', 'MAJEWSKI', '601831230', '00243069998', NULL),
+('TOMASZ', 'MICHALAK', '590784178', '44091893725', NULL),
+('KAROLINA', 'OLSZEWSKI', '562474011', '47050474287', 'klient ważny'),
+('ALEKS', 'PAWŁOWSKI', '625561689', '82040923774', NULL),
+('TADEUSZ', 'STĘPIEŃ', '758518768', '75121343671', 'klient ważny'),
+('STEFANIA', 'NOWAKOWSKI', '711327636', '80101698698', NULL),
+('TYMON', 'KACZMAREK', '609041387', '97042596741', NULL),
+('TADEUSZ', 'MAZUR', '660233683', '40082783497', NULL),
+('MARIKA', 'DUDEK', '579578903', '78101627778', 'klient zagraniczny'),
+('WITOLD', 'WITKOWSKI', '607617392', '51060882338', NULL),
+('KACPER', 'OSTROWSKI', '728062736', '97030278723', 'klient ważny');
 
 INSERT INTO klienci(imie, nazwisko, telefon, pesel, dodatkowe_informacje)
 VALUES
