@@ -1,22 +1,22 @@
-
-
-
-
-
-
-
-
-zlecenie piorytetowe
-zlecenie piorytetowe
-przewóz specialny
-
-
-wymaga oczenikania
-wymaga oczenikania
-wymaga oczenikania
-wymaga oczenikania
-
-
-przejazd skontorlowany przez inspekcje
-przejazd skontorlowany przez inspekcje
-przejazd z mandatem karnym
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+'zlecenie piorytetowe'
+'zlecenie piorytetowe'
+'przewóz specialny'
+NULL
+NULL
+'wymaga oczenikania'
+'wymaga oczenikania'
+'wymaga oczenikania'
+'wymaga oczenikania'
+NULL
+NULL
+'przejazd skontorlowany przez inspekcje'
+'przejazd skontorlowany przez inspekcje'
+'przejazd z mandatem karnym'
